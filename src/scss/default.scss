@@ -1,0 +1,19 @@
+@import 'colors';
+
+
+html {
+	scroll-behavior: smooth;
+    color: $fore-color;
+}
+
+body {
+    padding:0;
+    margin:0;
+}
+
+#page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}

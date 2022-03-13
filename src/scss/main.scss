@@ -1,0 +1,62 @@
+section {
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #4F7942;
+    padding:10px;
+}
+
+.big h1 {
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.big {
+    padding: 10px;
+    max-width: 720px;
+    margin:auto;
+    margin-top  : 15vh;
+    margin-bottom: 30vh;
+}
+
+.article {
+    padding: 10px;
+    max-width: 1024px;
+    margin:auto;
+}
+
+.article h1 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav li {
+        display:list-item;
+        margin-bottom: 8px;
+
+    }
+    header {
+        padding-left:10px;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex p {
+    max-width:500px;
+    padding:10px;
+}
+
+.flex img {
+    max-width: 100%;
+    max-height: 100%;
+}

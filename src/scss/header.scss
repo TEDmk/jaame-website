@@ -1,0 +1,30 @@
+header {
+    height: 150px;
+    margin:0;
+    padding:0;
+    padding-left:100px;
+    padding-top:10px;
+    display: flex;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topnav li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+.topnav {
+    margin: auto;
+}
+
+.topnav a:hover {
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+}

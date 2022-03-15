@@ -7,14 +7,25 @@ header {
     display: flex;
 }
 
+#header-logo img {
+    height: 100%;
+}
+
+#header-nav {
+    margin: auto;
+    margin-right:100px;
+}
+
 .topnav a {
     text-decoration: none;
-    color: black;
+    color: $fore-color;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
 
 .topnav li {
+    text-align: right;
     list-style: none;
     display: inline;
     margin-right: 20px;
@@ -27,4 +38,20 @@ header {
 .topnav a:hover {
     border-bottom: 1px solid #000;
     padding-bottom: 3px;
+}
+
+@media screen and (max-width: 720px) {
+    .topnav li {
+        display:list-item;
+        margin-bottom: 8px;
+
+    }
+    header {
+        padding-left:10px;
+    }
+
+
+    #header-nav {
+        margin: auto;
+    }
 }

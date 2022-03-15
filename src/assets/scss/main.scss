@@ -5,58 +5,147 @@ section {
 
 .btn {
     text-decoration: none;
-    color: white;
-    background-color: #4F7942;
-    padding:10px;
-}
-
-.big h1 {
-    font-weight: 500;
-    font-size: 60px;
+    color: lighten($primay-color, 90%);
+    background-color: $primay-color;
+    padding:15px;
+    border-radius: 5px;
 }
 
 .big {
     padding: 10px;
     max-width: 720px;
     margin:auto;
-    margin-top  : 15vh;
-    margin-bottom: 30vh;
+    margin-top  : calc((100vh - 280px)/2);
+    margin-bottom  : calc((100vh - 280px - 160px)/2);
+    transform: translateY(-50%);
+
+    h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
 }
 
 .article {
     padding: 10px;
     max-width: 1024px;
     margin:auto;
-}
-
-.article h1 {
-    font-weight: 500;
-    font-size: 40px;
-}
-
-@media screen and (max-width: 700px) {
-    .topnav li {
-        display:list-item;
-        margin-bottom: 8px;
-
-    }
-    header {
-        padding-left:10px;
+    h1 {
+        font-weight: 500;
+        font-size: 40px;
     }
 }
 
-.flex {
+.staff {
     display: flex;
+
     justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+    p {
+        max-width:500px;
+        margin: auto 0;
+        padding: 0;
+        color: $fore-color;
+    }
+
+    img {
+        width:300px;
+    }
+    .name {
+        font-weight: 500;
+    }
+    .description {
+        font-style: italic;
+        color: $text-color;
+    }
 }
 
-.flex p {
-    max-width:500px;
-    padding:10px;
+
+
+.hex img {
+    clip-path: url("#myClip");
+    width: 200px;
+
 }
 
-.flex img {
-    max-width: 100%;
-    max-height: 100%;
+@media screen and (min-width: 720px) {
+    .staff:nth-of-type(odd)  {
+
+        flex-direction: row-reverse;
+        .staff-intro {
+            margin: auto auto auto 20px;
+        }
+    }
+
+    .staff:nth-of-type(even)  {
+        flex-direction: row;
+        p {
+            text-align: right;
+        }
+        .staff-intro {
+            margin: auto 20px auto auto;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .staff {
+
+        margin-bottom: 100px;
+        p {
+            text-align: center !important ;
+        }
+
+        img {
+            width:300px;
+            margin: auto;
+        }
+
+        .name {
+            font-weight: 500;
+        }
+        .description {
+            font-style: italic;
+            color: $text-color;
+        }
+    }
+}
+
+.news {
+    padding: 0;
+    display: flex;
+    border: 1px solid lighten(black, 90%);
+    border-radius: 5px;
+    height: 300px;
+    margin-bottom: 20px;
+
+    p {
+        margin: 0;
+    }
+    .info {
+        padding:10px;
+
+        .title {
+            font-size: 30px;
+            font-weight: 500;
+            color: $fore-color;
+        }
+
+        .credits {
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        .description {
+            margin-top: 20px;
+        }
+    }
+    @media screen and (max-width: 720px) {
+        .info {
+            padding:30px;
+            padding-left:0;
+        }
+    }
 }

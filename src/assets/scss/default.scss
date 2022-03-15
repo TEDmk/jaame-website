@@ -2,8 +2,19 @@
 
 
 html {
+    --scroll-behavior: smooth;
 	scroll-behavior: smooth;
     color: $fore-color;
+    background-color: $back-color;
+    font-weight: 300;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    color: $text-color;
+    font-weight: 300;
+
 }
 
 body {

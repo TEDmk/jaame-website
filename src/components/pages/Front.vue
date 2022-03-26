@@ -7,6 +7,6 @@
       les inciter à agir à leur échelle pour la planète.
     </p>
     <br />
-    <a class="btn" href="#Section1">+ d'info sur l'asso</a>
+    <a class="btn" href="#association">+ d'info sur l'asso</a>
   </article>
 </template>

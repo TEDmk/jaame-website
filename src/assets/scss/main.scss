@@ -3,6 +3,10 @@ section {
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
 .btn {
     text-decoration: none;
     color: lighten($primay-color, 90%);
@@ -67,6 +71,8 @@ section {
 .hex img {
     clip-path: url("#myClip");
     width: 200px;
+    object-fit: cover;
+    height: 200px;
 
 }
 
@@ -97,10 +103,14 @@ section {
         p {
             text-align: center !important ;
         }
+        .hex {
+            width: 100%;
+        }
 
-        img {
-            width:300px;
-            margin: auto;
+        .hex-background {
+             margin:auto;
+             margin-top: 20px;
+             width: 200px;
         }
 
         .name {
@@ -120,6 +130,7 @@ section {
     border-radius: 5px;
     height: 300px;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
 
     p {
         margin: 0;

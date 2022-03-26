@@ -1,6 +1,6 @@
 <template>
   <article class="article">
-    <h1 id="Section1">Qui sommes-nous?</h1>
+    <h1 id="association">L'association</h1>
     <p>
       De nombreuses personnes ne sont pas sensibilisées aux problématiques
       environnementales et climatiques de demain. Nous organisons donc des

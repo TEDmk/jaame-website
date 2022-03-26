@@ -14,6 +14,9 @@ export default {
     Header,
     Footer,
   },
+  created() {
+    document.title = "J'agis à mon échelle";
+  },
 };
 </script>
 

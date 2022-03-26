@@ -9,9 +9,9 @@
         <p><b>Téléphone:</b> +33 6 86 14 07 62</p>
         <p><b>E-mail:</b> contact@jagisamonechelle.fr</p>
         <p>
-          <b>Courier:</b><br />
+          <b>Adresse:</b><br />
           &nbsp;&nbsp;&nbsp;&nbsp;J'agis à mon échelle<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;19 rue saint sebastien<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;19 rue Saint Sébastien<br />
           &nbsp;&nbsp;&nbsp;&nbsp;Dunkerque, 59140<br />
           &nbsp;&nbsp;&nbsp;&nbsp;France
         </p>

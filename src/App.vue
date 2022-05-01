@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="page">
+    <HeaderElement />
+    <router-view></router-view>
+    <FooterElement />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderElement from "@/components/HeaderElement.vue";
+import FooterElement from "@/components/FooterElement.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    HeaderElement,
+    FooterElement,
+  },
+  created() {
+    document.title = "J'agis à mon échelle";
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "./assets/scss/style";
 </style>

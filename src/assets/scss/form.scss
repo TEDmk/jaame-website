@@ -1,8 +1,18 @@
 .form input {
-    width: 100%;
+    width: 340px;
     border: 1px solid #CCC;
     border-radius: 4px;
-    height: 20px;
+    height: 30px;
+}
+
+.form .alert {
+    margin-top: 5px;
+    color: white;
+    background-color: #EE4B2B;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form button {
@@ -10,18 +20,30 @@
     border: 0;
 }
 
-.form h2 {
+button {
+    border: 0;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.form h1 {
     text-align: center;
 }
 
 .form-group {
+    margin:auto;
     margin-top:20px;
 }
 
 .form {
+    background-color: $fore-color;
+    color: white;
+    border-radius: 10px;
+    border: solid #CCC 1px;
+    @include fadeIn;
     font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    max-width: 1024px;
+    padding-top:10px;
+    width: 350px;
     margin:auto;
     h1 {
         font-weight: 500;
@@ -29,9 +51,28 @@
     }
 }
 
+
+@media screen and (min-width: 440px) {
+    .form {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .form {
+        padding: 10px;
+    }
+}
+
 .link-group a{
     text-align: center;
     color: #ccc;
     text-decoration: none;
-    font-size: small;
+    font-size: 1em;
+    :hover {
+        color:#333;
+    }
+}
+.link-group {
+    margin-top:15px;
 }

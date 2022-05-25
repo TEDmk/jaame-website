@@ -2,11 +2,12 @@
   <div id="page">
     <HeaderElement />
     <router-view></router-view>
-    <FooterElement />
   </div>
+  <FooterElement />
 </template>
 
 <script>
+import { mapActions } from "vuex";
 import HeaderElement from "@/components/HeaderElement.vue";
 import FooterElement from "@/components/FooterElement.vue";
 export default {
@@ -16,6 +17,18 @@ export default {
   },
   created() {
     document.title = "J'agis à mon échelle";
+  },
+  methods: {
+    ...mapActions({
+      clearErrors: "account/clearErrors",
+      hideMenu: "menu/hide",
+    }),
+  },
+  watch: {
+    $route(to, from) {
+      if (to.path != "/login") this.clearErrors();
+      this.hideMenu();
+    },
   },
 };
 </script>

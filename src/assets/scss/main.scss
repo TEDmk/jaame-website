@@ -3,6 +3,37 @@ section {
     font-family: 'Roboto', sans-serif;
 }
 
+@media screen and (max-width: 1024px) {
+    section {
+        width: 100%;
+        .info {
+            width:100%;
+            padding: 0 !important;
+        }
+        .article {
+            padding: 0 !important;
+        }
+
+        .article p{
+            padding: 10px !important;
+        }
+
+        .article h1{
+            padding: 10px !important;
+        }
+
+        img {
+            max-width:100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section {
+        width: 1024px;
+    }
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
 }
@@ -16,6 +47,7 @@ h1 {
 }
 
 .big {
+    @include fadeIn;
     padding: 10px;
     max-width: 720px;
     margin:auto;
@@ -31,8 +63,9 @@ h1 {
 }
 
 .article {
+    @include fadeIn;
     padding: 10px;
-    max-width: 1024px;
+    width: 100%;
     margin:auto;
     h1 {
         font-weight: 500;
@@ -52,6 +85,7 @@ h1 {
         margin: auto 0;
         padding: 0;
         color: $fore-color;
+        padding: 10px;
     }
 
     img {
@@ -63,6 +97,7 @@ h1 {
     .description {
         font-style: italic;
         color: $text-color;
+        padding-bottom: 5px !important;
     }
 }
 
@@ -75,6 +110,12 @@ h1 {
     height: 200px;
 
 }
+
+.credits {
+    font-style: italic;
+    font-size: 15px;
+}
+
 
 @media screen and (min-width: 720px) {
     .staff:nth-of-type(odd)  {
@@ -97,6 +138,10 @@ h1 {
 }
 
 @media screen and (max-width: 720px) {
+    .staff-intro {
+        margin: auto;
+    }
+
     .staff {
 
         margin-bottom: 100px;
@@ -124,24 +169,23 @@ h1 {
 }
 
 .news {
-    padding: 0;
     display: flex;
-    border: 1px solid lighten(black, 90%);
-    border-radius: 5px;
-    height: 300px;
-    margin-bottom: 20px;
+    border-bottom: 1px solid lighten(black, 90%);
+    margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
+    padding: 0;
 
     p {
         margin: 0;
     }
     .info {
-        padding:10px;
+        padding-bottom: 15px;
 
-        .title {
+        .title a{
             font-size: 30px;
             font-weight: 500;
             color: $fore-color;
+            text-decoration: none;
         }
 
         .credits {
@@ -158,5 +202,15 @@ h1 {
             padding:30px;
             padding-left:0;
         }
+    }
+}
+
+.button-more {
+    button {
+        float:right;
+        background-color: $primay-color;
+        color: white;
+        padding:5px 10px 5px 10px;
+        border-radius: 4px;
     }
 }

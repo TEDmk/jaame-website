@@ -1,27 +1,29 @@
 <template>
-  <section>
-    <NewsSection :articles="articles" />
-  </section>
+  <section><ArticleSection :article="getArticle()" /></section>
 </template>
 <script>
 import { mapState, mapActions } from "vuex";
-import NewsSection from "@/components/NewsSection.vue";
+import ArticleSection from "@/components/ArticleSection.vue";
 export default {
+  props: ["id"],
   components: {
-    NewsSection,
+    ArticleSection,
   },
   created() {
     this.getAll();
   },
   computed: {
     ...mapState({
-      articles: (state) => state.article.articles,
+      articles: (state) => state.article.indexedArticles,
     }),
   },
   methods: {
     ...mapActions("article", {
       getAll: "getAll",
     }),
+    getArticle() {
+      return this.articles[this.id];
+    },
   },
 };
 </script>
